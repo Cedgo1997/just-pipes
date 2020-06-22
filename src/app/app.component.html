@@ -1,25 +1,91 @@
-<h1>Pipes<small>Angular</small></h1>
-<hr>
+<h1><small>Angular</small> Pipes</h1>
+<hr />
 
 <div class="row">
   <div class="col">
-
-    <table class="table">
-      <thead class="thead-dark">
+    <table class="table table-dark">
+      <thead>
         <tr>
-          <th>Variable</th>
-          <th>Pipe</th>
-          <th>Output</th>
+          <th scope="col">#</th>
+          <th scope="col">Variable</th>
+          <th scope="col">Pipe</th>
+          <th scope="col">Output</th>
         </tr>
       </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>{{ name }}</td>
+          <td>uppercase</td>
+          <td>{{ name | uppercase }}</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>{{ name }}</td>
+          <td>slice: 3</td>
+          <td>{{ name | slice: 3 }}</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>{{ name }}</td>
+          <td>slice: 0:3</td>
+          <td>{{ name | slice: 0:3 }}</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>{{ array }}</td>
+          <td>slice: 1:5</td>
+          <td>{{ array | slice: 1:5 }}</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>{{ pi }}</td>
+          <td>number</td>
+          <td>{{ pi | number }}</td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>{{ pi }}</td>
+          <td>number:'1.0-0'</td>
+          <td>{{ pi | number: "1.0-0" }}</td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>{{ pi }}</td>
+          <td>number:'3.0-0'</td>
+          <td>{{ pi | number: "3.0-0" }}</td>
+        </tr>
+        <tr>
+          <th scope="row">8</th>
+          <td>{{ pi }}</td>
+          <td>number: '.0-2'</td>
+          <td>{{ pi | number: ".0-2" }}</td>
+        </tr>
+        <tr>
+          <th scope="row">9</th>
+          <td>{{ percentage }}</td>
+          <td>percentage</td>
+          <td>{{ percentage | percent }}</td>
+        </tr>
+        <tr>
+          <th scope="row">10</th>
+          <td>{{ percentage }}</td>
+          <td>percentage:'2.2-2'</td>
+          <td>{{ percentage | percent: "2.2-2" }}</td>
+        </tr>
+      </tbody>
     </table>
-    <tbody>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
-    
+  </div>
+</div>
+
+<h3>JSON <small>Pipe</small></h3>
+<hr />
+<h5>Logan Object Info</h5>
+<hr>
+<div class="row mb-5">
+  <div class="col">
+    <pre>
+      {{ hero | json }}
+    </pre>
   </div>
 </div>
