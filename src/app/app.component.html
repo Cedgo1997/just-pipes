@@ -81,21 +81,21 @@
         </tr>
         <tr>
           <th scope="row">12</th>
-          <td> {{ salary }} </td>
+          <td>{{ salary }}</td>
           <td>currency</td>
-          <td> {{ salary | currency }} </td>
+          <td>{{ salary | currency }}</td>
         </tr>
         <tr>
           <th scope="row">13</th>
-          <td> {{ salary }} </td>
+          <td>{{ salary }}</td>
           <td>currency:'EUR</td>
-          <td> {{ salary | currency:'EUR' }} </td>
+          <td>{{ salary | currency: "EUR" }}</td>
         </tr>
         <tr>
           <th scope="row">14</th>
-          <td> {{ salary }} </td>
+          <td>{{ salary }}</td>
           <td>currency:'CAD':'symbol':'.0-0'</td>
-          <td> {{ salary | currency:'CAD':'symbol':'.0-0' }} </td>
+          <td>{{ salary | currency: "CAD":"symbol":".0-0" }}</td>
         </tr>
         <tr>
           <th scope="row">15</th>
@@ -105,43 +105,55 @@
         </tr>
         <tr>
           <th scope="row">16</th>
-          <td> {{ date }} </td>
-          <td> date </td>
-          <td> {{ date | date }} </td>
+          <td>{{ date }}</td>
+          <td>date</td>
+          <td>{{ date | date }}</td>
         </tr>
         <tr>
           <th scope="row">17</th>
-          <td> {{ date }} </td>
-          <td> date:'dd/MMMM/yy' </td>
-          <td> {{ date | date:'dd/MMMM/yy' }} </td>
+          <td>{{ date }}</td>
+          <td>date:'dd/MMMM/yy'</td>
+          <td>{{ date | date: "dd/MMMM/yy" }}</td>
         </tr>
         <tr>
           <th scope="row">18</th>
-          <td> {{ date }} </td>
-          <td> date:'dd/MMMM/yy':'':'en' </td>
-          <td> {{ date | date:'dd/MMMM/yy':'':'en' }} </td>
+          <td>{{ date }}</td>
+          <td>date:'dd/MMMM/yy':'':'en'</td>
+          <td>{{ date | date: "dd/MMMM/yy":"":"en" }}</td>
         </tr>
         <tr>
           <th scope="row">20</th>
-          <td> {{ date }} </td>
-          <td> date:'dd/MMM/yyyy' </td>
-          <td> {{ date | date:'dd/MMM/yyyy' }} </td>
+          <td>{{ date }}</td>
+          <td>date:'dd/MMM/yyyy'</td>
+          <td>{{ date | date: "dd/MMM/yyyy" }}</td>
         </tr>
         <tr>
           <th scope="row">21</th>
-          <td> {{ date }} </td>
-          <td> date:'medium' </td>
-          <td> {{ date | date:'medium' }} </td>
+          <td>{{ date }}</td>
+          <td>date:'medium'</td>
+          <td>{{ date | date: "medium" }}</td>
         </tr>
         <tr>
           <th scope="row">22</th>
-          <td> {{ date }} </td>
-          <td> date:'dd/MMMM/yyyy':'':'{{language}}' </td>
-          <td> {{ date | date:'dd/MMMM/yyyy':'':language }} </td>
-          <br>
-          <button class="mr-1 btn btn-primary" (click)="changeLang('en')">English</button>
-          <button class="mr-1 btn btn-secondary" (click)="changeLang('es')">Spanish</button>
-          <button class="mr-1 btn btn-success" (click)="changeLang('fr')" >French</button>
+          <td>{{ date }}</td>
+          <td>date:'dd/MMMM/yyyy':'':'{{ language }}'</td>
+          <td>{{ date | date: "dd/MMMM/yyyy":"":language }}</td>
+          <br />
+          <button class="mr-1 btn btn-primary" (click)="changeLang('en')">
+            English
+          </button>
+          <button class="mr-1 btn btn-secondary" (click)="changeLang('es')">
+            Spanish
+          </button>
+          <button class="mr-1 btn btn-success" (click)="changeLang('fr')">
+            French
+          </button>
+        </tr>
+        <tr>
+          <th scope="row">23</th>
+          <td>{{ name2 }}</td>
+          <td>capitalize</td>
+          <td>{{name2 | capitalize }}</td>
         </tr>
       </tbody>
     </table>
@@ -151,7 +163,7 @@
 <h3>JSON <small>Pipe</small></h3>
 <hr />
 <h5>Logan Object Info</h5>
-<hr>
+<hr />
 <div class="row mb-5">
   <div class="col">
     <pre>

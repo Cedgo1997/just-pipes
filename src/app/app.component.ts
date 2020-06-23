@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name: string = 'César González';
+  name2: string = 'cÉsAr GoNzáLez';
   array: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   pi: number = Math.PI;
   salary:number = 1234.5;
