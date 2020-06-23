@@ -162,11 +162,11 @@
           <td>
             password: {{ activate }}
             <br />
-            <button class="btn btn-danger" (click)="activate=!activate" >
-              Activate/Deactivate
-            </button>
           </td>
-          <td> {{ name | password: activate }} </td>
+          <td>{{ name | password: activate }}</td>
+          <button class="btn btn-danger" (click)="activate = !activate">
+            Activate/Deactivate
+          </button>
         </tr>
       </tbody>
     </table>
