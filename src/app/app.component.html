@@ -112,20 +112,36 @@
         <tr>
           <th scope="row">17</th>
           <td> {{ date }} </td>
-          <td> date:'dd/MMM/yy' </td>
-          <td> {{ date | date:'dd/MMM/yy' }} </td>
+          <td> date:'dd/MMMM/yy' </td>
+          <td> {{ date | date:'dd/MMMM/yy' }} </td>
         </tr>
         <tr>
-          <th scope="row">19</th>
+          <th scope="row">18</th>
+          <td> {{ date }} </td>
+          <td> date:'dd/MMMM/yy':'':'en' </td>
+          <td> {{ date | date:'dd/MMMM/yy':'':'en' }} </td>
+        </tr>
+        <tr>
+          <th scope="row">20</th>
           <td> {{ date }} </td>
           <td> date:'dd/MMM/yyyy' </td>
           <td> {{ date | date:'dd/MMM/yyyy' }} </td>
         </tr>
         <tr>
-          <th scope="row">19</th>
+          <th scope="row">21</th>
           <td> {{ date }} </td>
           <td> date:'medium' </td>
           <td> {{ date | date:'medium' }} </td>
+        </tr>
+        <tr>
+          <th scope="row">22</th>
+          <td> {{ date }} </td>
+          <td> date:'dd/MMMM/yyyy':'':'{{language}}' </td>
+          <td> {{ date | date:'dd/MMMM/yyyy':'':language }} </td>
+          <br>
+          <button class="mr-1 btn btn-primary" (click)="changeLang('en')">English</button>
+          <button class="mr-1 btn btn-secondary" (click)="changeLang('es')">Spanish</button>
+          <button class="mr-1 btn btn-success" (click)="changeLang('fr')" >French</button>
         </tr>
       </tbody>
     </table>

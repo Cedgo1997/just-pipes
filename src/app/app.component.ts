@@ -13,11 +13,18 @@ export class AppComponent {
   percentage: number = 0.234;
   date:Date = new Date();
 
+  language:string = 'en';
+
   promiseValue = new Promise<string>((resolve) => {
     setTimeout(() => {
       resolve('Data has arrived');
     }, 4500);
   });
+
+
+  changeLang(term:string) {
+    this.language = term;
+  }
 
   hero = {
     name: 'Logan',
