@@ -73,6 +73,60 @@
           <td>percentage:'2.2-2'</td>
           <td>{{ percentage | percent: "2.2-2" }}</td>
         </tr>
+        <tr>
+          <th scope="row">11</th>
+          <td>{{ percentage }}</td>
+          <td>percentage:'2.2-2'</td>
+          <td>{{ percentage | percent: "2.2-2" }}</td>
+        </tr>
+        <tr>
+          <th scope="row">12</th>
+          <td> {{ salary }} </td>
+          <td>currency</td>
+          <td> {{ salary | currency }} </td>
+        </tr>
+        <tr>
+          <th scope="row">13</th>
+          <td> {{ salary }} </td>
+          <td>currency:'EUR</td>
+          <td> {{ salary | currency:'EUR' }} </td>
+        </tr>
+        <tr>
+          <th scope="row">14</th>
+          <td> {{ salary }} </td>
+          <td>currency:'CAD':'symbol':'.0-0'</td>
+          <td> {{ salary | currency:'CAD':'symbol':'.0-0' }} </td>
+        </tr>
+        <tr>
+          <th scope="row">15</th>
+          <td>{{ promiseValue }}</td>
+          <td>async</td>
+          <td>{{ promiseValue | async }}</td>
+        </tr>
+        <tr>
+          <th scope="row">16</th>
+          <td> {{ date }} </td>
+          <td> date </td>
+          <td> {{ date | date }} </td>
+        </tr>
+        <tr>
+          <th scope="row">17</th>
+          <td> {{ date }} </td>
+          <td> date:'dd/MMM/yy' </td>
+          <td> {{ date | date:'dd/MMM/yy' }} </td>
+        </tr>
+        <tr>
+          <th scope="row">19</th>
+          <td> {{ date }} </td>
+          <td> date:'dd/MMM/yyyy' </td>
+          <td> {{ date | date:'dd/MMM/yyyy' }} </td>
+        </tr>
+        <tr>
+          <th scope="row">19</th>
+          <td> {{ date }} </td>
+          <td> date:'medium' </td>
+          <td> {{ date | date:'medium' }} </td>
+        </tr>
       </tbody>
     </table>
   </div>
