@@ -122,19 +122,19 @@
           <td>{{ date | date: "dd/MMMM/yy":"":"en" }}</td>
         </tr>
         <tr>
-          <th scope="row">20</th>
+          <th scope="row">19</th>
           <td>{{ date }}</td>
           <td>date:'dd/MMM/yyyy'</td>
           <td>{{ date | date: "dd/MMM/yyyy" }}</td>
         </tr>
         <tr>
-          <th scope="row">21</th>
+          <th scope="row">20</th>
           <td>{{ date }}</td>
           <td>date:'medium'</td>
           <td>{{ date | date: "medium" }}</td>
         </tr>
         <tr>
-          <th scope="row">22</th>
+          <th scope="row">21</th>
           <td>{{ date }}</td>
           <td>date:'dd/MMMM/yyyy':'':'{{ language }}'</td>
           <td>{{ date | date: "dd/MMMM/yyyy":"":language }}</td>
@@ -150,10 +150,23 @@
           </button>
         </tr>
         <tr>
-          <th scope="row">23</th>
+          <th scope="row">22</th>
           <td>{{ name2 }}</td>
           <td>capitalize</td>
           <td>{{ name2 | capitalize }}</td>
+        </tr>
+
+        <tr>
+          <th scope="row">23</th>
+          <td>{{ name }}</td>
+          <td>
+            password: {{ activate }}
+            <br />
+            <button class="btn btn-out" (click)="activate=!activate" >
+              Activate/Deactivate
+            </button>
+          </td>
+          <td> {{ name | password: activate }} </td>
         </tr>
       </tbody>
     </table>

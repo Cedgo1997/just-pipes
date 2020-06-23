@@ -13,6 +13,9 @@ export class AppComponent {
   salary:number = 1234.5;
   percentage: number = 0.234;
   date:Date = new Date();
+  activate: boolean = true;
+
+
   language:string = 'en';
   videoUrl:string = 'https://www.youtube.com/embed/u3Q3Fe4D7eo';
 
