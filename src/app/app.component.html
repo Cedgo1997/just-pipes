@@ -153,7 +153,7 @@
           <th scope="row">23</th>
           <td>{{ name2 }}</td>
           <td>capitalize</td>
-          <td>{{name2 | capitalize }}</td>
+          <td>{{ name2 | capitalize }}</td>
         </tr>
       </tbody>
     </table>
@@ -169,5 +169,21 @@
     <pre>
       {{ hero | json }}
     </pre>
+  </div>
+</div>
+
+<h3 class="mt-4">secureDom</h3>
+<hr />
+
+<div class="row mb-5">
+  <div class="col">
+    <iframe
+      width="560"
+      height="315"
+      [src]="videoUrl | secureDom"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
   </div>
 </div>
